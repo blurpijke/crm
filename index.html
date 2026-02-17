@@ -2,10 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>CRM</title>
+  <title>CRM для фрилансера</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>CRM работает 🚀</h1>
-  <p>Репозиторий подключён правильно</p>
+
+<h1>CRM для фрилансера</h1>
+
+<div class="form">
+  <input id="title" placeholder="Название сделки">
+  <input id="amount" type="number" placeholder="Сумма (₸)">
+  <select id="status">
+    <option>Новая</option>
+    <option>В работе</option>
+    <option>Успешно</option>
+    <option>Провалена</option>
+  </select>
+  <button onclick="addDeal()">Добавить сделку</button>
+</div>
+
+<h2>Сделки</h2>
+<ul id="list"></ul>
+
+<script src="script.js"></script>
 </body>
 </html>
